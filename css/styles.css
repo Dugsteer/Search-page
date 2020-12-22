@@ -57,6 +57,21 @@ h4 {
   line-height: 1.2;
   margin-bottom: 0.7rem; }
 
+.sense {
+  margin: 2rem;
+  height: auto;
+  margin: auto; }
+
+.sense-container {
+  height: 1000px;
+  width: 300px;
+  display: flex;
+  margin-left: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: red; }
+
 .buttons {
   display: flex;
   align-items: center;
@@ -672,12 +687,11 @@ h4 {
   align-self: center;
   justify-self: start;
   margin-left: 9rem;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
-  grid-template-rows: 80px minmax(0, 1fr);
-  grid-template-columns: 1fr; }
+  height: auto; }
   @media only screen and (max-width: 62.5em) {
     .main {
       width: 600px; } }
