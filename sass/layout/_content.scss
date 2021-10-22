@@ -90,3 +90,23 @@ b, h2 {color: $color-blue}
     justify-self: center;
         }
 }
+.item5 {
+ 
+    grid-column: 1/2;
+
+      @media only screen and (max-width:$bp-large){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
+}
+.item6 {
+ 
+    grid-column: 2/3;
+
+      @media only screen and (max-width:$bp-large){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
+}
