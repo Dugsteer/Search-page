@@ -6,22 +6,25 @@
     justify-self: start;
     margin-left: 9rem;
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    width: auto;
-    grid-template-rows:80px minmax(0, 1fr);
-    grid-template-columns: 1fr;
+    width: 800px;
+    grid-template-rows:auto;
+    grid-template-columns: 2fr;
+    
 
     @media only screen and (max-width:$bp-large){
         width: 600px;
         }
     @media only screen and (max-width:$bp-small){
-        grid-row: 1/2;
+        grid-row: auto;
+        grid-column: 1fr;
         margin-top: 4rem;
         width: 400px;
         }
     @media only screen and (max-width:$bp-smallest){
         grid-row: 1/2;
+          grid-column: 1fr;
         margin-top: 4rem;
         width: 360px;
         }
@@ -36,10 +39,54 @@ b, h2 {color: $color-blue}
 .pdf-class {
     height: 500px;
     width: auto;
-    box-shadow: $box-shadow-small;
-    margin-bottom: 2rem;
+
+    margin-bottom: 4rem;
 }
 
 .pdf-class img{
     height: 100%;
+        box-shadow: $box-shadow-small;
+}
+
+.item1 {
+  
+    grid-column: 1/2;
+
+      @media only screen and (max-width:$bp-large){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
+}
+
+.item2 {
+   
+    grid-column: 2/3;
+
+      @media only screen and (max-width:$bp-large){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
+}
+.item3 {
+
+    grid-column: 1/2;
+
+      @media only screen and (max-width:$bp-large){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+       
+        }
+}
+.item4 {
+ 
+    grid-column: 2/3;
+
+      @media only screen and (max-width:$bp-large){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
 }
