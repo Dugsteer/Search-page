@@ -9,8 +9,9 @@
     align-content: center;
     justify-content: center;
     width: 800px;
+    text-align: center;
     grid-template-rows:auto;
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(auto-fit);
     
 
     @media only screen and (max-width:$bp-large){
@@ -40,13 +41,14 @@ b, h2 {color: $color-blue}
     height: 500px;
     width: auto;
 
-    margin-bottom: 4rem;
+    margin: 4rem;
 }
 
 .pdf-class img{
     height: 100%;
         box-shadow: $box-shadow-small;
 }
+
 
 .item1 {
   
@@ -69,44 +71,45 @@ b, h2 {color: $color-blue}
     justify-self: center;
         }
 }
-.item3 {
 
-    grid-column: 1/2;
+// .item3 {
 
-      @media only screen and (max-width:$bp-large){
-        grid-column: 1/2;
-            width: fit-content;
-    justify-self: center;
+//     grid-column: 1/2;
+
+//       @media only screen and (max-width:$bp-large){
+//         grid-column: 1/2;
+//             width: fit-content;
+//     justify-self: center;
        
-        }
-}
-.item4 {
+//         }
+// }
+// .item4 {
  
-    grid-column: 2/3;
+//     grid-column: 2/3;
 
-      @media only screen and (max-width:$bp-large){
-        grid-column: 1/2;
-            width: fit-content;
-    justify-self: center;
-        }
-}
-.item5 {
+//       @media only screen and (max-width:$bp-large){
+//         grid-column: 1/2;
+//             width: fit-content;
+//     justify-self: center;
+//         }
+// }
+// .item5 {
  
-    grid-column: 1/2;
+//     grid-column: 1/2;
 
-      @media only screen and (max-width:$bp-large){
-        grid-column: 1/2;
-            width: fit-content;
-    justify-self: center;
-        }
-}
-.item6 {
+//       @media only screen and (max-width:$bp-large){
+//         grid-column: 1/2;
+//             width: fit-content;
+//     justify-self: center;
+//         }
+// }
+// .item6 {
  
-    grid-column: 2/3;
+//     grid-column: 2/3;
 
-      @media only screen and (max-width:$bp-large){
-        grid-column: 1/2;
-            width: fit-content;
-    justify-self: center;
-        }
-}
+//       @media only screen and (max-width:$bp-large){
+//         grid-column: 1/2;
+//             width: fit-content;
+//     justify-self: center;
+//         }
+// }

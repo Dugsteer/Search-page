@@ -673,8 +673,9 @@ h4 {
   align-content: center;
   justify-content: center;
   width: 800px;
+  text-align: center;
   grid-template-rows: auto;
-  grid-template-columns: 2fr; }
+  grid-template-columns: repeat(auto-fit); }
   @media only screen and (max-width: 62.5em) {
     .main {
       width: 600px; } }
@@ -700,7 +701,7 @@ b, h2 {
 .pdf-class {
   height: 500px;
   width: auto;
-  margin-bottom: 4rem; }
+  margin: 4rem; }
 
 .pdf-class img {
   height: 100%;
@@ -718,38 +719,6 @@ b, h2 {
   grid-column: 2/3; }
   @media only screen and (max-width: 62.5em) {
     .item2 {
-      grid-column: 1/2;
-      width: fit-content;
-      justify-self: center; } }
-
-.item3 {
-  grid-column: 1/2; }
-  @media only screen and (max-width: 62.5em) {
-    .item3 {
-      grid-column: 1/2;
-      width: fit-content;
-      justify-self: center; } }
-
-.item4 {
-  grid-column: 2/3; }
-  @media only screen and (max-width: 62.5em) {
-    .item4 {
-      grid-column: 1/2;
-      width: fit-content;
-      justify-self: center; } }
-
-.item5 {
-  grid-column: 1/2; }
-  @media only screen and (max-width: 62.5em) {
-    .item5 {
-      grid-column: 1/2;
-      width: fit-content;
-      justify-self: center; } }
-
-.item6 {
-  grid-column: 2/3; }
-  @media only screen and (max-width: 62.5em) {
-    .item6 {
       grid-column: 1/2;
       width: fit-content;
       justify-self: center; } }
