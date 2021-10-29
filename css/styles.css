@@ -701,7 +701,13 @@ b, h2 {
 .pdf-class {
   height: 300px;
   width: auto;
-  margin: 4rem; }
+  margin: 4rem;
+  transition: all, .2s; }
+
+.pdf-class:hover {
+  transform: scale(102%);
+  box-shadow: 0 12px 14px 2px rgba(0, 0, 0, 0.16), 0 3px 24px 5px rgba(0, 0, 0, 0.16), 0 8px 10px -5px rgba(0, 0, 0, 0.24);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 12px 14px 2px, rgba(0, 0, 0, 0.16) 0px 3px 24px 5px, rgba(0, 0, 0, 0.24) 0px 8px 10px -5px; }
 
 .pdf-class img {
   height: 100%;
