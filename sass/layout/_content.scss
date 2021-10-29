@@ -38,7 +38,7 @@ b, h2 {color: $color-blue}
 }
 
 .pdf-class {
-    height: 500px;
+    height: 300px;
     width: auto;
 
     margin: 4rem;
@@ -59,6 +59,12 @@ b, h2 {color: $color-blue}
             width: fit-content;
     justify-self: center;
         }
+
+          @media only screen and (max-width:$bp-small){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
 }
 
 .item2 {
@@ -66,6 +72,22 @@ b, h2 {color: $color-blue}
     grid-column: 2/3;
 
       @media only screen and (max-width:$bp-large){
+        grid-column: 2/3;
+            width: fit-content;
+    justify-self: center;
+        }
+
+      @media only screen and (max-width:$bp-small){
+        grid-column: 1/2;
+            width: fit-content;
+    justify-self: center;
+        }
+}
+
+.item3 {
+    grid-column: 3/4;
+
+          @media only screen and (max-width:$bp-large){
         grid-column: 1/2;
             width: fit-content;
     justify-self: center;
