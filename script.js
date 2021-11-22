@@ -1,33 +1,33 @@
 // LOADER, SIDEBAR and ABOUT INFO
 const sidey = document.getElementById("sidebar");
-const loader = document.getElementById("loaderDiv");
+// const loader = document.getElementById("loaderDiv");
 const extra = document.getElementById("info");
 const mainpic = document.getElementById("mainpic");
 const blue = window.matchMedia("(max-width: 800px)");
 
 
 //switch introduction pic
-const dot = document.getElementById("dot");
-const gaming = new Audio("sounds/gaming.aac");
-var isPlaying = false;
+// const dot = document.getElementById("dot");
+// const gaming = new Audio("sounds/gaming.aac");
+// var isPlaying = false;
 
 
-function addDot(){
-  dot.classList.toggle('dotter');
-  isPlaying ? gaming.pause() : gaming.play();
-}
+// function addDot(){
+//   dot.classList.toggle('dotter');
+//   isPlaying ? gaming.pause() : gaming.play();
+// }
 
-gaming.onplaying = function() {
-  isPlaying = true;
-};
-gaming.onpause = function() {
-  isPlaying = false;
-};
+// gaming.onplaying = function() {
+//   isPlaying = true;
+// };
+// gaming.onpause = function() {
+//   isPlaying = false;
+// };
 
-gaming.addEventListener('ended', function() {
-  gaming.currentTime = 0;
-  gaming.play();
-}, false);
+// gaming.addEventListener('ended', function() {
+//   gaming.currentTime = 0;
+//   gaming.play();
+// }, false);
 
 
 
@@ -40,20 +40,20 @@ function unshow() {
 }
 
 //Center the loader wherever the page is
-function checkForTop() {
-  loader.style.top = window.pageYOffset + "px";
-}
-checkForTop();
+// function checkForTop() {
+//   loader.style.top = window.pageYOffset + "px";
+// }
+// checkForTop();
 
-//Manage the loader
-function stopLoader() {
-  loader.classList.add("stop");
-}
-function startLoader() {
-  loader.classList.remove("stop");
-  setTimeout(stopLoader, 1000);
-}
-setTimeout(stopLoader, 1000);
+// //Manage the loader
+// function stopLoader() {
+//   loader.classList.add("stop");
+// }
+// function startLoader() {
+//   loader.classList.remove("stop");
+//   setTimeout(stopLoader, 1000);
+// }
+// setTimeout(stopLoader, 1000);
 
 //Stop the sidebar appearing on small screens with matchmedia
 function myFunction(x) {
