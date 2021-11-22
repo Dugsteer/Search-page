@@ -67,6 +67,20 @@ h4 {
   margin-top: 2rem; }
   @media only screen and (max-width: 37.5em) {
     .sense {
+      width: 90%;
+      grid-row: 1/2; } }
+
+.sensegen {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .sensegen {
+      width: 90%;
       grid-row: 1/2; } }
 
 .mainpage_top {
@@ -80,16 +94,16 @@ h4 {
     .mainpage_top {
       grid-row: 2/3;
       justify-content: center;
-      width: 400px;
+      width: 300px;
       height: 60px;
       flex-direction: column; } }
   @media only screen and (max-width: bp-smallest) {
     .mainpage_top {
-      width: 360px;
+      width: 300px;
       height: 60px; } }
 
 .sense-bottom {
-  grid-row: 5/6;
+  grid-row: 4/5;
   grid-column: 2/3;
   margin: auto;
   margin-top: 2rem;
@@ -98,6 +112,7 @@ h4 {
   height: auto; }
   @media only screen and (max-width: 37.5em) {
     .sense-bottom {
+      width: 90%;
       grid-row: 5/6; } }
 
 @media (min-width: 600px) {
