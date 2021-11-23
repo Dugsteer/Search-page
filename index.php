@@ -23,7 +23,7 @@
   </head>
   <body>
 
-        <div class="social">
+      <div class="social">
         <div class="social-item">
             <a href="#" 
         onclick="
@@ -94,6 +94,9 @@
     </div>
 
     <div id="wrapper" class="wrapper">
+
+        <div class="gridfiller"></div>
+
  <div class="sense">
  </style>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
