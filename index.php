@@ -14,14 +14,55 @@
     <title>Esl-ology Printables</title>
     <link rel="icon" type="image/png" href="favicon.png" ; />
     <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="css/social.css">
 
        <script data-ad-client="ca-pub-6192312197226967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967"
      crossorigin="anonymous"></script>
-    <script src="csi.min.js"></script>
+    <!-- <script src="csi.min.js"></script> -->
   </head>
   <body>
 
+        <div class="social">
+        <div class="social-item">
+            <a href="#" 
+        onclick="
+          window.open(
+            'https://www.facebook.com/sharer/sharer.php?u=https://esl-ology.com', 
+            'facebook-share-dialog', 
+            'width=626,height=436'); 
+          return false;">
+            <img src="img/social/facebook.webp">
+            </a>
+        </div>
+        <div class="social-item">
+                <a href="#" 
+        onclick="
+          window.open(
+          'https://pinterest.com/pin/create/button/?url=http://esl-ology.com&media=https://esl-ology.com/img/london.png&description=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
+              'pinterest-share-dialog', 
+                'width=626,height=436'); 
+              return false;">
+            <img src="img/social/pinterest.webp">
+                    </a>
+            </div>
+            <div class="social-item">
+                    <a href="#" 
+            onclick="
+              window.open(
+          'https://twitter.com/intent/tweet?url=http://esl-ology.com&text=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
+              'twitter-share-dialog', 
+                'width=626,height=436'); 
+              return false;">
+            <img src="img/social/twitter.webp">
+                    </a>
+            </div>
+
+            <div class="social-item">
+                <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA" target="_blank">
+            <img src="img/social/youtube.webp"></a>
+            </div>
+      </div>
 
     <div class="nav-bar" id="navbar">
       <a href="index.html" class="nav-bar__logo">
@@ -67,7 +108,7 @@
  </div>
 
       <div class="sidebar-container" id="sidebar">
-        <div data-include="sidebar.html"></div>
+        <?php include "./sidebar.html" ?>
       </div>
 
       <div class="introduction">
@@ -322,7 +363,7 @@
  
     <footer class="footer">
       <div class="footer__copyright" id="footer">
-        <p>© 2020 Copyright Esl-ology.com & copyright owners.</p>
+        <p>© 2021 Copyright Esl-ology.com & copyright owners.</p>
         <p>
           Image credits <a href="questions-maze-credits.html">here</a>. Thanks,
           guys!
