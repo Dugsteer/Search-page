@@ -13,11 +13,6 @@
   @media only screen and (max-width: $bp-largest){
     width: 100vw;
   }
-  @media only screen and (max-width: $bp-smallest){
-    width: 100vw;
-    
-  }
-
 
 
   &__logo{
@@ -38,14 +33,14 @@
   }
 
   &__link{
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-largest) {
       grid-column: 4/5;
   
     }
 
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     grid-template-columns: 5vw 18vw 1fr 18vw 5vw;
   }
 
@@ -56,7 +51,7 @@
     font-size: 1.6rem;
 
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       display: none;
     }
     @media only screen and (max-width: $bp-small) {
@@ -83,6 +78,10 @@
       &-main {
         line-height: 2.4rem;
         text-align: center;
+
+          @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
       }
 
       &-deco {
@@ -130,7 +129,7 @@
 
     &.link2,
     &.link3 {
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-largest) {
         display: none;
       }
     }
@@ -147,7 +146,7 @@
   cursor: pointer;
   display: none;
 
-  @media only screen and (max-width: $bp-medium){
+  @media only screen and (max-width: $bp-largest){
     display: block;
   }
 

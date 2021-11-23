@@ -195,29 +195,40 @@ h4 {
       width: 10rem; } }
 
 .sidebar {
-  grid-row: 1/7;
-  grid-column: 1/2;
-  width: 100%;
+  width: 23rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 1rem;
-  transition: all 0.2s ease-in-out; }
-  @media only screen and (max-width: 50em) {
+  padding: 1rem; }
+  @media only screen and (max-width: 75em) {
     .sidebar {
       position: absolute;
+      top: 0px;
+      left: 0px;
       width: 100vw;
       z-index: 500;
       height: 100%;
-      padding: 3rem; } }
-  @media only screen and (max-width: 28em) {
-    .sidebar {
-      width: 100vw;
-      padding: 6rem; } }
+      padding: 3rem;
+      display: none; } }
+
+.sidebar-container {
+  grid-row: 1/6;
+  grid-column: 1/2;
+  height: 100%; }
+  @media only screen and (max-width: 75em) {
+    .sidebar-container {
+      display: none; } }
 
 .sidebar h2:first-of-type {
   margin-top: 3rem; }
+
+.gridfiller {
+  grid-row: 1/7;
+  grid-column: 1/2;
+  background-color: white;
+  height: 100%;
+  width: 23rem; }
 
 .sidebar ul li {
   list-style-type: none;
@@ -303,14 +314,6 @@ h4 {
 .icon:hover {
   fill: darkgrey; }
 
-.sidebar-container {
-  grid-row: 1/7;
-  grid-column: 1/2;
-  height: 100%; }
-  @media only screen and (max-width: 50em) {
-    .sidebar-container {
-      display: none; } }
-
 .block {
   display: block; }
 
@@ -335,11 +338,11 @@ h4 {
   box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 100; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: bp-large) {
     .extra {
       top: 80%;
       height: 600px; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: bp-small) {
     .extra {
       top: 60%;
       width: 320px;
@@ -356,7 +359,7 @@ h4 {
   align-items: center;
   width: 400px;
   height: 640px; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: bp-small) {
     .extra__content {
       grid-template-columns: 1fr;
       grid-template-rows: 3fr;
@@ -380,7 +383,7 @@ h4 {
   grid-row: 2/3;
   justify-self: start;
   align-self: start; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: bp-small) {
     .bmc-button {
       grid-row: 3/4;
       margin-top: 4rem; } }
@@ -428,9 +431,6 @@ h4 {
   @media only screen and (max-width: 75em) {
     .nav-bar {
       width: 100vw; } }
-  @media only screen and (max-width: 28em) {
-    .nav-bar {
-      width: 100vw; } }
   .nav-bar__logo {
     grid-column: 2/3;
     align-self: center;
@@ -440,10 +440,10 @@ h4 {
   .nav-bar__main {
     grid-column: 4/5;
     text-align: center; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 75em) {
     .nav-bar__link {
       grid-column: 4/5; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .nav-bar {
       grid-template-columns: 5vw 18vw 1fr 18vw 5vw; } }
   .nav-bar__title {
@@ -451,7 +451,7 @@ h4 {
     margin-right: auto;
     align-self: center;
     font-size: 1.6rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .nav-bar__title {
         display: none; } }
     @media only screen and (max-width: 37.5em) {
@@ -472,6 +472,9 @@ h4 {
       .nav-bar__title-page-main {
         line-height: 2.4rem;
         text-align: center; }
+        @media only screen and (max-width: 50em) {
+          .nav-bar__title-page-main {
+            display: none; } }
       .nav-bar__title-page-deco {
         height: 4rem;
         width: auto;
@@ -498,7 +501,7 @@ h4 {
     text-decoration: none; }
     .nav-bar__link:hover {
       color: #ffe164; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 75em) {
       .nav-bar__link.link2, .nav-bar__link.link3 {
         display: none; } }
 
@@ -507,7 +510,7 @@ h4 {
   align-self: center;
   cursor: pointer;
   display: none; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 75em) {
     .menu {
       display: block; } }
   .menu:hover {
@@ -519,18 +522,19 @@ h4 {
   width: 800px;
   background-color: #fff;
   justify-self: center;
-  align-self: center;
-  margin: 4rem 0;
+  margin: 0;
   padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 5px;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 75em) {
+    .introduction {
+      margin: auto; } }
   @media only screen and (max-width: 62.5em) {
     .introduction {
-      width: 600px;
-      height: 333px; } }
+      width: 600px; } }
   @media only screen and (max-width: 37.5em) {
     .introduction {
       grid-row: 2/3;
@@ -648,7 +652,11 @@ h4 {
   grid-template-columns: 23rem 1fr; }
   @media only screen and (max-width: 75em) {
     .wrapper {
-      width: 100vw; } }
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; } }
   @media only screen and (max-width: 62.5em) {
     .wrapper {
       grid-template-columns: 28rem 1fr; } }
@@ -676,9 +684,10 @@ h4 {
   text-align: center;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit); }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 75em) {
     .main {
-      width: 600px; } }
+      width: 600px;
+      margin-right: 9rem; } }
   @media only screen and (max-width: 37.5em) {
     .main {
       grid-row: auto;
