@@ -4,7 +4,7 @@
     width: 800px;
     background-color: #fff;
     justify-self: center;
-    margin: 0;
+    margin: 2rem;
     padding: 1rem 0;
     display: flex;
 
@@ -26,7 +26,6 @@
         width: 400px;
         height: 500px;
         flex-direction: column;
-        
        }
 
        @media only screen and (max-width: $bp-smallest){
