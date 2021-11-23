@@ -195,8 +195,9 @@ h4 {
       width: 10rem; } }
 
 .sidebar {
+  position: absolute;
+  top: 0;
   width: 23rem;
-  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -212,7 +213,7 @@ h4 {
       padding: 3rem; } }
 
 .sidebar-container {
-  grid-row: 1/6;
+  grid-row: 1/7;
   grid-column: 1/2;
   height: 100%; }
   @media only screen and (max-width: 75em) {
@@ -337,11 +338,11 @@ h4 {
   box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 100; }
-  @media only screen and (max-width: bp-large) {
+  @media only screen and (max-width: 62.5em) {
     .extra {
       top: 80%;
       height: 600px; } }
-  @media only screen and (max-width: bp-small) {
+  @media only screen and (max-width: 37.5em) {
     .extra {
       top: 60%;
       width: 320px;
@@ -358,7 +359,7 @@ h4 {
   align-items: center;
   width: 400px;
   height: 640px; }
-  @media only screen and (max-width: bp-small) {
+  @media only screen and (max-width: 37.5em) {
     .extra__content {
       grid-template-columns: 1fr;
       grid-template-rows: 3fr;
@@ -382,7 +383,7 @@ h4 {
   grid-row: 2/3;
   justify-self: start;
   align-self: start; }
-  @media only screen and (max-width: bp-small) {
+  @media only screen and (max-width: 37.5em) {
     .bmc-button {
       grid-row: 3/4;
       margin-top: 4rem; } }
@@ -521,7 +522,7 @@ h4 {
   width: 800px;
   background-color: #fff;
   justify-self: center;
-  margin: 0;
+  margin: 2rem;
   padding: 1rem 0;
   display: flex;
   align-items: center;
