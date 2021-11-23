@@ -209,8 +209,7 @@ h4 {
       width: 100vw;
       z-index: 500;
       height: 100%;
-      padding: 3rem;
-      display: none; } }
+      padding: 3rem; } }
 
 .sidebar-container {
   grid-row: 1/6;
@@ -544,7 +543,7 @@ h4 {
       flex-direction: column; } }
   @media only screen and (max-width: 28em) {
     .introduction {
-      width: 360px; } }
+      width: 300px; } }
   .introduction a {
     display: inline;
     text-decoration: none;
@@ -678,6 +677,7 @@ h4 {
   align-self: center;
   justify-self: start;
   margin-left: 9rem;
+  margin-top: 4rem;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -688,7 +688,9 @@ h4 {
   @media only screen and (max-width: 75em) {
     .main {
       width: 100vw;
-      margin-right: 9rem; } }
+      margin-right: 9rem;
+      display: flex;
+      flex-wrap: wrap; } }
   @media only screen and (max-width: 37.5em) {
     .main {
       grid-row: auto;
@@ -769,7 +771,7 @@ b, h2 {
       height: 300px; } }
   @media only screen and (max-width: 28em) {
     .links {
-      width: 360px; } }
+      width: 300px; } }
   .links__text {
     margin-bottom: 3rem;
     color: #368cbf;

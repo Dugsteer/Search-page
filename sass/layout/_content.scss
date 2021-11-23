@@ -5,6 +5,7 @@
     align-self: center;
     justify-self: start;
     margin-left: 9rem;
+    margin-top: 4rem;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -17,7 +18,8 @@
     @media only screen and (max-width:$bp-largest){
         width: 100vw;
         margin-right: 9rem;
-        ;
+        display: flex;
+        flex-wrap: wrap;
         }
 
 
