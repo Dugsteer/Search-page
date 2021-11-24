@@ -39,6 +39,12 @@ width: 100vw;
     background-color: white;
     height: 100%;
     width: 23rem;
+
+
+  @media only screen and (max-width: $bp-largest) {
+    display: none;
+    width: 0;
+  }
 }
 
 
