@@ -23,357 +23,169 @@
   </head>
   <body>
 
-      <div class="social">
-        <div class="social-item">
-            <a href="#" 
-        onclick="
-          window.open(
-            'https://www.facebook.com/sharer/sharer.php?u=https://esl-ology.com', 
-            'facebook-share-dialog', 
-            'width=626,height=436'); 
-          return false;">
-            <img src="img/social/facebook.webp">
-            </a>
-        </div>
-        <div class="social-item">
-                <a href="#" 
-        onclick="
-          window.open(
-          'https://pinterest.com/pin/create/button/?url=http://esl-ology.com&media=https://esl-ology.com/img/london.png&description=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
-              'pinterest-share-dialog', 
-                'width=626,height=436'); 
-              return false;">
-            <img src="img/social/pinterest.webp">
-                    </a>
-            </div>
-            <div class="social-item">
-                    <a href="#" 
-            onclick="
-              window.open(
-          'https://twitter.com/intent/tweet?url=http://esl-ology.com&text=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
-              'twitter-share-dialog', 
-                'width=626,height=436'); 
-              return false;">
-            <img src="img/social/twitter.webp">
-                    </a>
-            </div>
-
-            <div class="social-item">
-                <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA" target="_blank">
-            <img src="img/social/youtube.webp"></a>
-            </div>
-      </div>
-
-    <div class="nav-bar" id="navbar">
-      <a href="index.html" class="nav-bar__logo">
-        <svg class="icon-header nav-bar__logo-img">
-          <use xlink:href="sprite2.svg#Buho" onclick="scrollUp()"></use>
-        </svg>
-      </a>
-      <h3 class="nav-bar__title">Esl-Ology.Com</h3>
-      <div class="nav-bar__title-page">
-        <span class="nav-bar__title-page-main" id="pageTitle"
-          >TEXT MAZE FUN</span
-        >
-      </div>
-      <div class="nav-bar__links">
-        <a href="index.html" class="nav-bar__link link3">Home</a>
-        <svg
-          viewBox="0 0 100 80"
-          width="40"
-          height="20"
-          onclick="toggler();"
-          id="menu"
-          class="menu"
-        >
-          <rect width="100" height="12"></rect>
-          <rect y="30" width="100" height="12"></rect>
-          <rect y="60" width="100" height="12"></rect>
-        </svg>
-      </div>
-    </div>
+    <?php include "./social.php" ?>
+    <?php include "./navbar.php" ?>
 
     <div id="wrapper" class="wrapper">
+    <div class="gridfiller"></div>
 
-        <div class="gridfiller"></div>
+    <?php include "./narrow-ad-top.php" ?>
 
- <div class="sense">
- </style>
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
- <!-- mainpage_top -->
- <ins class="adsbygoogle mainpage_top"
-      style="display:inline-block"
-      data-ad-client="ca-pub-6192312197226967"
-      data-ad-slot="3393588944"></ins>
- <script>
- (adsbygoogle = window.adsbygoogle || []).push({});
- </script>
- </div>
+    <div class="sidebar-container" id="sidebar">
+        <?php include "./sidebar.html"; ?>
+    </div>
 
-      <div class="sidebar-container" id="sidebar">
-        <?php include "./sidebar.html" ?>
-      </div>
-
-      <div class="introduction">
-        <div class="introduction__img" id="mainpic">
-          <img src="img/Minimaze.webp" alt="decorative" />
-          <div class="dot" id="dot"><img src="img/favicon.png" alt="" /></div>
-        </div>
-        <div class="introduction__text">
-          <h1>TEXT MAZES AND PRINTABLES</h1>
-          <p>
-            Esl-ology Printables are worksheets that are free to print and
+    <?php 
+            $imgsrc = "Minimaze.webp";
+            $title = "Text Mazes and Printables";
+            $text = '<p>Esl-ology Printables are worksheets that are free to print and
             download. There are
             <b style="font-weight: bold">vocabulary dominoes</b>,
             <b style="font-weight: bold">word searches</b>,
             <b style="font-weight: bold">text mazes</b> and more. Text mazes are
             a great alterative to traditional word searches and make great
-            warmers or mini breaks. Find all the letters in a paragraph of text
-            — working horizontally and vertically.
-            <b style="font-weight: bold">Click on the printables</b> to download
-            or print them.
-          </p>
-        </div>
-      </div>
+            warmers or mini breaks.</p>';
+            include "./page-intro.php"; 
+    ?>
 
-      <div class="main">
+    <div class="main">
 
-        <div class="item1 item">
-          <h2 class="download">Job Go Fish Cards</h2>
-          <div class="pdf-class">
-            <a href="docs/JobsGoFish.pdf">
-              <img src="img/JobsGoFish.webp" alt="Jobs go fish cards"
-            /></a>
-          </div>
-        </div>
+      <?php 
+        $item_title = "Jobs Go Fish Cards";
+        $item_href = "JobsGoFish.pdf";
+        $item_img = "JobsGoFish.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-        <div class="item2 item">
-          <h2 class="download">Fortnite Fever Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/FORTNITE FEVER.pdf">
-              <img src="img/FortniteFever.webp" alt="Fortnite Text Maze"
-            /></a>
-          </div>
-        </div>
+      <?php 
+        $item_title = "Fortnite Fever Text Maze";
+        $item_href = "FORTNITE FEVER.pdf";
+        $item_img = "FortniteFever.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-           <div class="item3 item">
-          <h2 class="download">Get a Job Game</h2>
-          <div class="pdf-class">
-            <a href="docs/JobBoardGame.pdf">
-              <img src="img/JobsBoardGame.webp" alt="Sports go fish cards"
-            /></a>
-          </div>
-        </div>
+     <?php 
+        $item_title = "Get a Job Game";
+        $item_href = "JobBoardGame.pdf";
+        $item_img = "JobsBoardGame.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-             <div class="item item">
-          <h2 class="download">Sports Dominoes</h2>
-          <div class="pdf-class">
-            <a href="docs/SportsDominoes.pdf">
-              <img src="img/SportsDominoes.webp" alt="Sports dominoes"
-            /></a>
-          </div>
-        </div>
+     <?php 
+        $item_title = "Sports Dominoes";
+        $item_href = "SportsDominoes.pdf";
+        $item_img = "SportsDominoes.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
- <div class="item item ppt">
-          <h2 class="download">Foods Go Fish Cards</h2>
-          <div class="pdf-class">
-            <a href="docs/FoodsGoFish.pdf">
-              <img src="img/FoodsGoFish.webp" alt="Foods Go Fish Cards"
-            /></a>
-          </div>
-        </div>
+     <?php 
+        $item_title = "Foods Go Fish Cards";
+        $item_href = "FoodsGoFish.pdf";
+        $item_img = "FoodsGoFish.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-            <div class="item">
-          <h2 class="download">Sports Go Fish Cards</h2>
-          <div class="pdf-class">
-            <a href="docs/SportsGoFish.pdf">
-              <img src="img/SportsGoFish.webp" alt="Sports go fish cards"
-            /></a>
-          </div>
-        </div>
+     <?php 
+        $item_title = "Sports Go Fish Cards";
+        $item_href = "SportsGoFish.pdf";
+        $item_img = "SportsGoFish.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
+      <?php 
+        $item_title = "Pre-Int Jeopardy Game";
+        $item_href = "PRE-INTERMILLIONAIRE.ppt";
+        $item_img = "preinterm.webp";
+        include "./page-item-short.php"; 
+      ?>
 
-        <div class="item ppt">
-          <h2 class="download">Pre-Int Jeopardy Game</h2>
-          <div class="ppt-class">
-            <a href="docs/PRE-INTERMILLIONAIRE.ppt">
-              <img src="img/preinterm.webp" alt="PreIntermediate Powerpoint Game"
-            /></a>
-          </div>
-        </div>
+      <?php 
+        $item_title = "Sports Board Game";
+        $item_href = "SportsBoardGame.pdf";
+        $item_img = "SportsBoardGame.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-        <div class="item">
-          <h2 class="download">Sports Board Game</h2>
-          <div class="pdf-class">
-            <a href="docs/SportsBoardGame.pdf">
-              <img src="img/SportsBoardGame.webp" alt="Sports Board Game"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item item">
-          <h2 class="download">Animals Go Fish Cards</h2>
-          <div class="pdf-class">
-            <a href="docs/AnimalsGoFish.pdf">
-              <img
-                src="img/AnimalGoFish.webp"
-                alt="Animals go fish cards"
-            /></a>
-          </div>
-        </div>
+      <?php 
+        $item_title = "Animals Go Fish! Cards";
+        $item_href = "AnimalsGoFish.pdf";
+        $item_img = "AnimalGoFish.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
 
-        <div class="sensegen">
-        </style>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
-        <!-- mainpage_top -->
-        <ins class="adsbygoogle mainpage_top"
-             style="display:inline-block"
-             data-ad-client="ca-pub-6192312197226967"
-             data-ad-slot="3393588944"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        </div>
+       <?php include "./narrow-ad-middle.php"?>
 
-        <div class="item item">
-          <h2 class="download">Comparisons Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/ComparativesSuperlativesTextMaze.pdf">
-              <img
-                src="img/ComparativesSuperlativesTextMaze.jpg"
-                alt="comparatives superlatives text maze"
-            /></a>
-          </div>
-        </div>
+      <?php 
+        $item_title = "Comparisons Text Maze";
+        $item_href = "ComparativesSuperlativesTextMaze.pdf";
+        $item_img = "ComparativesSuperlativesTextMaze.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Frequency Adverbs Text Maze";
+        $item_href = "FrequencyAdverbsTextMaze.pdf";
+        $item_img = "FrequencyAdverbsTextMaze.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Past Simple Text Maze";
+        $item_href = "PastSimpleTextMaze.pdf";
+        $item_img = "PastSimpleTextMaze.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Present Tenses  Text Maze";
+        $item_href = "PSimpleContinuous.pdf";
+        $item_img = "PSimpleContinuous.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Clothes Text Maze";
+        $item_href = "ClothesTextMaze.pdf";
+        $item_img = "ClothesTextMaze.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Vehicles Text Maze";
+        $item_href = "VehiclesTextMaze.pdf";
+        $item_img = "VehiclesTextMaze.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Christmas Text Maze";
+        $item_href = "ChristmasTextMaze.pdf";
+        $item_img = "ChristmasTextMaze.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Vehicles Word Search";
+        $item_href = "VehiclesWordSearch.pdf";
+        $item_img = "VehiclesWordSearch.webp";
+        include "./page-item-tall.php"; 
+      ?>
+      <?php 
+        $item_title = "Halloween Board Game";
+        $item_href = "HalloweenBoardGame.pdf";
+        $item_img = "HalloweenBoardGame.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-        <div class="item item">
-          <h2 class="download">Frequency Adverbs Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/FrequencyAdverbsTextMaze.pdf">
-              <img
-                src="img/FrequencyAdverbsTextMaze.webp"
-                alt="Adverbs text maze"
-            /></a>
-          </div>
-        </div>
+      <?php include "./narrow-ad-middle.php" ?>
+      
+      <?php 
+        $item_title = "Halloween Dominoes";
+        $item_href = "HalloweenDominoesPrintable.pdf";
+        $item_img = "HalloweenDominoes.webp";
+        include "./page-item-tall.php"; 
+      ?>
 
-        <div class="item">
-          <h2 class="download">Past Simple Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/PastSimpleTextMaze.pdf">
-              <img src="img/PastSimpleTextMaze.webp" alt="Past simple text maze"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item">
-          <h2 class="download">Present Tenses Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/PSimpleContinuous.pdf">
-              <img src="img/PSimpleContinuous.webp" alt="Present Temses text maze"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item">
-          <h2 class="download">Clothes Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/ClothesTextMaze.pdf">
-              <img src="img/ClothesTextMaze.webp" alt="clothes text maze"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item">
-          <h2 class="download">Vehicles Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/VehiclesTextMaze.pdf">
-              <img src="img/VehiclesTextMaze.webp" alt="vehicles text maze"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item6">
-          <h2 class="download">Christmas Text Maze</h2>
-          <div class="pdf-class">
-            <a href="docs/ChristmasTextMaze.pdf">
-              <img src="img/ChristmasTextMaze.webp" alt="Christmas text maze"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item">
-          <h2 class="download">Vehicles Word Search</h2>
-          <div class="pdf-class item3">
-            <a href="docs/VehiclesWordSearch.pdf">
-              <img src="img/VehiclesWordSearch.webp" alt="Vehicles word search"
-            /></a>
-          </div>
-        </div>
-
-        <div class="item">
-          <h2 class="download">Halloween Board Game</h2>
-          <div class="pdf-class">
-            <a href="docs/HalloweenBoardGame.pdf">
-              <img src="img/HalloweenBoardGame.webp" alt="Halloween Board Game"
-            /></a>
-          </div>
-        </div>
-
-        <div class="sensegen">
-        </style>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
-        <!-- mainpage_top -->
-        <ins class="adsbygoogle mainpage_top"
-             style="display:inline-block"
-             data-ad-client="ca-pub-6192312197226967"
-             data-ad-slot="3393588944"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        </div>
-
-        <div class="item">
-          <h2 class="download">Halloween Dominoes</h2>
-          <div class="pdf-class">
-            <a href="docs/HalloweenDominoesPrintable.pdf">
-              <img src="img/HalloweenDominoes.webp" alt="Halloween dominoes"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="links">
-        <p class="links__text">Try some more TEFL games!</p>
-        <div class="links__images">
-          <div class="links__images-1 figure">
-            <a href="flashcards-animals.html">
-              <img src="img/FlashcardAnimalpic.webp" alt=""
-            /></a>
-            <figcaption>Animal Photo Flashcards</figcaption>
-          </div>
-          <div class="links__images-1 figure">
-            <a href="bingo-animals.html">
-              <img src="img/AnimalBING.webp" alt=""
-            /></a>
-            <figcaption>Printable Bingo Games</figcaption>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
      
- 
-    <footer class="footer">
-      <div class="footer__copyright" id="footer">
-        <p>© 2021 Copyright Esl-ology.com & copyright owners.</p>
-        <p>
-          Image credits <a href="questions-maze-credits.html">here</a>. Thanks,
-          guys!
-        </p>
-      </div>
-    </footer>
+    <?php include "./footer.php" ?>
 
     <script src="/script.js"></script>
+    
   </body>
 </html>
