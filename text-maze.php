@@ -6,7 +6,7 @@
   <div class="gridfiller"></div>
 
   <?php include "./includes/narrow-ad-top.php" ?>
-  <?php include "./includes/sidebar.html"; ?>
+  <?php include "sidebar.html"; ?>
 
   <?php
   $imgsrc = "Minimaze.webp";
@@ -23,6 +23,26 @@
 
   <div class="main">
 
+    <?php
+    $item_title = "Christmas Board Game";
+    $item_href = "XmasBoardGame.pdf";
+    $item_img = "XmasBoardGame.webp";
+    include "./page-item-tall.php";
+    ?>
+
+    <?php
+    $item_title = "Night Before Xmas Text Maze";
+    $item_href = "NightBeforeTextMaze.pdf";
+    $item_img = "NightBeforeTextMaze.webp";
+    include "./page-item-tall.php";
+    ?>
+
+    <?php
+    $item_title = "Christmas Dominoes";
+    $item_href = "XmasDominoes.pdf";
+    $item_img = "XmasDominoes.webp";
+    include "./page-item-tall.php";
+    ?>
     <?php
     $item_title = "Christmas Go Fish! Cards";
     $item_href = "XmasGoFish.pdf";
