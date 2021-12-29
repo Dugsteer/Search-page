@@ -12,7 +12,6 @@
   }
 }
 
-
 .sensegen{
 grid-column: 1/4;
  display: flex;
@@ -21,11 +20,13 @@ grid-column: 1/4;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
     @media only screen and (max-width: 37.5em) {
       width: 90%;
     grid-row: 1/2;
   }
 }
+
 
 .mainpage_top { 
   width: 800px; height: 100px;
@@ -47,9 +48,6 @@ grid-column: 1/4;
     height: 60px;
   }
 }
-
-
-
 
 .sense-bottom {
   grid-row: 4/5;

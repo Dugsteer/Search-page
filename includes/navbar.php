@@ -7,7 +7,7 @@
       <h3 class="nav-bar__title">Esl-Ology.Com</h3>
       <div class="nav-bar__title-page">
         <span class="nav-bar__title-page-main" id="pageTitle"
-          >TEXT MAZE FUN</span
+          >SEARCH OUR SITE</span
         >
       </div>
       <div class="nav-bar__links">

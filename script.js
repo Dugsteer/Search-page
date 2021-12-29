@@ -4,6 +4,15 @@ const sidey = document.getElementById("sidebar");
 const extra = document.getElementById("info");
 const mainpic = document.getElementById("mainpic");
 const blue = window.matchMedia("(max-width: 800px)");
+const intro2 = document.getElementById("intro2");
+const removeI2 = document.getElementById("removeI2");
+
+
+
+function removeIntro2(){
+  intro2.style.display = 'none';
+}
+
 
 
 //switch introduction pic

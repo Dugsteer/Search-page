@@ -1,5 +1,5 @@
 .main {
-    grid-row: 3/4;
+    grid-row: 5/6;
     grid-column: 2/3;
     position: relative;
     align-self: center;
@@ -76,8 +76,8 @@ b, h2 {color: $color-blue}
     transition: all, .2s;
 }
 
-.ppt img{
-    width: 100%;
+.ppt-class img{
+    width: 220px;
     height: auto;
     box-shadow: $box-shadow-small;
 }
