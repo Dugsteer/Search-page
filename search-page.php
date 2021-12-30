@@ -11,10 +11,10 @@
     <?php include "sidebar.html"; ?>
   </div>
 
-    <?php 
-    include "./search_page_includes/page-random-selection.php";?>
+  
 
   <?php
+
   $imgsrc = "Buho.webp";
   $title = "Search Esl-ology.com";
   $text = '<p>Use the search panel to search our complete range of

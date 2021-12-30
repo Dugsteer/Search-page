@@ -27,6 +27,14 @@ case 'ebp':
 </div>";
       break;
 
+case 'php':
+      echo
+      "<a href='https://esl-ology.com/$sheet_url'>
+      <img src='img/$sheet_image' alt='$sheet_title'></a>
+      </div>
+</div>";
+      break;
+
   default:
     echo "<a href='docs/$sheet_url'>
             <img src='img/$sheet_image' alt='$sheet_title'></a>
