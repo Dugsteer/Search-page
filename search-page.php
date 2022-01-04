@@ -1,7 +1,7 @@
 <?php include "./db_worksheets.php" ?>
-<?php include "./includes/header.php" ?>
+<?php include "./includes/search-page-header.php" ?>
 <?php include "./includes/social.php" ?>
-<?php include "./includes/navbar.php" ?>
+<?php include "./includes/search-page-navbar.php" ?>
 
 <div id="wrapper" class="wrapper">
   <div class="gridfiller"></div>
@@ -40,4 +40,4 @@
   </div>
 </div>
 
-<?php include "./includes/footer.php"; ?>
+<?php include "./includes/search-page-footer.php"; ?>
